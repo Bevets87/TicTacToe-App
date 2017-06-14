@@ -1,0 +1,17 @@
+{
+  "name": "tictactoe-app",
+  "version": "1.0.0",
+  "description": "tic tac toe build with angular",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch scss -o css"
+  },
+  "author": "steve barton",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}

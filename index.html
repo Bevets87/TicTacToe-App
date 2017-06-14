@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TicTacToe in Angular</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class='container' ng-app='ticTacToe' ng-controller='cntrl'>
+      <h1>TicTacToe</h1>
+      <h3 ng-show='winner'>{{winner}}</h3>
+      <div class='container prompt' ng-hide='hidePrompt'>
+        <h2>Will it be X's or O's?</h2>
+        <button class='btn' ng-click='setUserChoice("X")'>X</button> <button class='btn' ng-click='setUserChoice("O")'>O</button>
+      </div>
+      <table ng-hide='hideBoard'>
+        <tr>
+          <td ng-click='!board[0] && setUserPosition(0)'>{{board[0]}}</td>
+          <td ng-click='!board[1] && setUserPosition(1)'>{{board[1]}}</td>
+          <td ng-click='!board[2] && setUserPosition(2)'>{{board[2]}}</td>
+       </tr>
+        <tr>
+          <td ng-click='!board[3] && setUserPosition(3)'>{{board[3]}}</td>
+          <td ng-click='!board[4] && setUserPosition(4)'>{{board[4]}}</td>
+          <td ng-click='!board[5] && setUserPosition(5)'>{{board[5]}}</td>
+        </tr>
+        <tr>
+          <td ng-click='!board[6] && setUserPosition(6)'>{{board[6]}}</td>
+          <td ng-click='!board[7] && setUserPosition(7)'>{{board[7]}}</td>
+          <td ng-click='!board[8] && setUserPosition(8)'>{{board[8]}}</td>
+        </tr>
+      </table>
+    </div>
+
+  <script src="/node_modules/angular/angular.js" ></script>
+  <script src="js/app.js" ></script>
+  </body>
+</html>
