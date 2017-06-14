@@ -8,7 +8,6 @@
   },
   "author": "steve barton",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "node-sass": "^4.5.3"
   }
