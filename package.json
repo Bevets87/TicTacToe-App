@@ -8,9 +8,7 @@
   },
   "author": "steve barton",
   "license": "ISC",
-  "dependencies": {
-    "angular": "^1.6.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "node-sass": "^4.5.3"
   }
